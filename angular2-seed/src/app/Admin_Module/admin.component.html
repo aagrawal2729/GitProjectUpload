@@ -1,0 +1,63 @@
+
+        <div class="container">
+  <h2>Admin Module</h2>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Create User</button>
+  <div id="demo" class="collapse">
+    <h3>Create User</h3>
+
+    <form action = "" >
+        <label>Enter Name </label>
+        <input type = "text" /><br><br>
+
+         <label>Enter username </label>
+        <input type = "text" /><br><br>
+
+         <label>Enter password </label>
+        <input type = "password" /><br><br>
+
+         <label>Enter Role </label>
+        <input type = "text" /><br><br>
+
+        <input type = "submit" value = "submit" >
+
+
+    </form>
+
+
+
+  </div>
+
+
+    
+        <h1> Welcome Admin!!!</h1>   
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1" (click)="getUsers()" >
+          List of Users</button>
+            <div id="demo1" class="collapse">
+   <!--<div class="row" *ngFor = "Let list of UserList">
+  <div class="col-md-2">{{ list.S No. }}</div>
+  <div class="col-md-2">{{ list.name}} Name</div>
+  <div class="col-md-2">{{ list.userName}}</div>
+    <div class="col-md-2">{{ list.createdDate}}</div>
+  <div class="col-md-2">{{ list.IsActive }}</div>
+  <div class="col-md-2">{{ list.role }}</div>
+</div>-->
+
+
+  <div class="row" >
+  <div class="col-md-2">list.S No. </div>
+  <div class="col-md-2"> list.name  </div>
+  <div class="col-md-2"> list.userName </div>
+    <div class="col-md-2"> list.createdDate </div>
+  <div class="col-md-2"> list.IsActive </div>
+  <div class="col-md-2"> list.role </div>
+</div>
+
+            </div>
+    </div>
+
+
+
+
+
+

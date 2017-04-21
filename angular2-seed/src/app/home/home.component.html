@@ -1,0 +1,45 @@
+<h3>Welcome to Login Page</h3>
+
+<!--<div class="container" >
+            <div class="panel-body">
+                <div class="row">
+                    <div class="input-field col s12">
+                          <label for="username">User Name</label>
+
+                        <input [(ngModel)]="user.username" name="username" 
+                            type="text" class="validate"><br><br>
+                      
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="input-field col s12">
+                         <label for="password">Password</label>
+                        <input [(ngModel)]="user.password" name="password" 
+                            type="password" class="validate"><br><br>
+                       
+                    </div>
+                </div>
+ 
+                <span>{{errorMsg}}</span>
+                <button (click)="login()" 
+                    class="btn waves-effect waves-light" 
+                    type="submit" name="action">Login</button>
+            </div>
+</div>-->
+<form name="loginForm">
+<table>
+    <tr>
+        <td>Enter User Name : </td>
+        <td><input type="text" name="username"> </td>
+    </tr>
+    <tr>
+        <td>Enter Password : </td>
+        <td><input type="text" name="password"> </td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="submit" (click)="login()"></td>
+        <td><input type="reset" name="reset"></td>
+    </tr>
+</table>
+</form>

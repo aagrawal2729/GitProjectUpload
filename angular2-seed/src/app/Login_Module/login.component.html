@@ -1,0 +1,33 @@
+<div class="container" >
+          <h3>Enter Login Information</h3>
+            <div class="panel-body">
+                <div class="row">
+                   
+                    <div class="input-field col s12">
+                         <label for="username">Username</label>
+                        <input [(ngModel)]="user.username" name = "username"
+                            type="text" class="validate"> <br><br>
+                        
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="input-field col s12">
+                           <label for="password">Password</label>
+                        <input [(ngModel)]="user.password" name = "password"
+                            type="password" class="validate"> <br><br>
+                   
+                    </div>
+                </div>
+ 
+                <span>{{errorMsg}}</span>
+                <button (click)="login()" 
+                    class="login-btn btn waves-effect waves-light" 
+                    type="submit" name="action">Login</button>
+
+
+                  
+
+                
+            </div>
+        </div>
